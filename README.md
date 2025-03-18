@@ -18,7 +18,7 @@ In total, 3 techniques have been used to find either optimal or the best solutio
 
 To demonstrate the results of finding an optimal maneuver, the landing algorithm used in the *brute force* and *heuristic* solutions has been modified to run at real time inside the space flight simulation game Kerbal Space Program:
 
-* [Simulación](./ksp_simul.py)
+* [Simulation](./ksp_simul.py)
 
 The maneuver can be modified with several parameters like:
 
@@ -26,60 +26,54 @@ The maneuver can be modified with several parameters like:
 * Velocity ROC: Rate of change at which the rocket's downwards speed is reduced
 * Extra Altitude: Increases the altitude at which a step in the maneuver is to be performed  
 
-## Manual de uso (para los distintos métodos)
+## Usage manual
 
-1. Acceder a la carpeta que contiene los archivos .py
+At the repo's directory:
 
-``` bash
-$ cd ../tareas-programadas-importeinnecesario/TP2/entrega2
-```
-
-2. Ejecutar la técnica deseada con la version de python.
+1. Run a solution algorithm
 
 ``` bash
 $ python3 (fuerzabruta.py|heuristica.py|metaheuristica.py)
 ```
+Any of the solutions will show a graph on the screen representing the speed over time of the trajectory followed by the rocket.
 
-Cualquiera de los programas mostrará un gráfico en pantalla que representa la trayectoria que se siguió, en los casos de los algoritmos de fuerza bruta y meta heurística, esta será la más óptima (que se encontró):
 
-![graphs]({4900AE86-E08D-4587-9B25-929838E2C96A}.png)
 
-También se imprimira en la consola los parámetros finales de dicha maniobra:
 
-![console]({32E150A5-D033-4910-A749-5EA48E1ED279}.png)
+![graphs](screenshots/{}.png)
 
-## Manual de uso (para ksp_simul.py)
+The final parameters of the maneuver will also be printed in the console:
+![console]({}.png)
 
-Para ejecutar este programa se necesita:
+## Usage manual for ksp_simul.py
 
-* Una copia del videojuego de simulación espacial [Kerbal Space Program](https://es.wikipedia.org/wiki/Kerbal_Space_Program) (versión 12.5 para Windows).
-* Instalar el plugin [kRPC](https://krpc.github.io/krpc/index.html) desde cualquiera de los [métodos sugeridos](https://krpc.github.io/krpc/getting-started.html#the-python-client)
-* Instalar el cliente de Python para kRPC:
+To execute this program you need:
+
+* An installed copy of the spaceflight simulation game [Kerbal Space Program](https://es.wikipedia.org/wiki/Kerbal_Space_Program) (version 12.5 for Windows)
+* The [server plugin](https://krpc.github.io/krpc/getting-started.html#the-server-plugin) and [python client](https://krpc.github.io/krpc/getting-started.html#the-python-client) for [kRPC](https://krpc.github.io/krpc/index.html)
 
 ```bash
 $ pip install krpc
 ```
 
-Se recomienda verificar la instalación correcta de los requisitos anteriores antes de ejecutar este programa.
-
-Luego se debe iniciar el servidor de kRPC (preferiblemente antes de intentar el aterrizaje). Ver [la guía de inicio de kRPC](https://krpc.github.io/krpc/index.html) para más info.
-
-
-Una vez cumplidos los puntos anteriores, se puede ejecutar el programa desde la terminal con:
+After verifying all the previous requirements are met, start KSP and get into a "desirable" landing trajectory, that is, one where the rocket's velocity along the x and z axis has been reduced to as close to 0 as possible, then start the kRPC server an run the program with:
 
 ```bash
 $ python3 ksp_simul.py
 ```
 
-Ejemplo de programa en medio de una maniobra:
+Screenshot of the program in the middle of a maneuver:
 ![ksp]({FC0DB047-C44E-4DE1-9122-28348AAAB935}.png)
 
-El programa realizará un aterrizaje automático de la nave activa:
+An automatic landing will be attempted with the current active ship:
 
-[Video de demonstración](https://drive.google.com/file/d/1Ry9quCB065hH0fEq62p1MfjmBa-87qxl/view?usp=drive_link)
 
-(Solo funciona cuando la velocidad horizontal de la nave es poca, alrededor de los 3m/s y en un cuerpo celeste sin atmosfera).
-## Autores: Importe Innecesario
+[Video demo]()
 
-* **Esteban Isaac Baires Cerdas**
+Again, this will only work when there is almost no horizontal velocity and over a celestial body with no atmosphere.
+
+
+## Authors
+
 * **Elizabeth Huang Wu**
+* **Esteban Isaac Baires Cerdas**
