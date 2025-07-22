@@ -7,13 +7,13 @@ from bruteforce import *
 DEBUG = 0
 
 if __name__ == "__main__":
-    rocket_mass = 1000  # kg
+    rocket_mass = 2641  # kg
     max_thrust = 20000  # N - enough to generate ~20 m/s^2 with the given mass
 
     # Test the simulation with selected parameters
     trajectory = simulate_landing(
-        initial_height=100,
-        initial_velocity=-50,
+        initial_height=5000,
+        initial_velocity=0,
         rocket_mass=rocket_mass,
         max_thrust_newtons=max_thrust,
         tolerance=0.5,

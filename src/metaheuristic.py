@@ -79,9 +79,9 @@ def genetic_algorithm(initial_population, generations, initial_height, initial_v
 
 if __name__ == "__main__":
     # Define the initial problem parameters
-    initial_height = 100
-    initial_velocity = -50
-    rocket_mass = 1000
+    initial_height = 5000
+    initial_velocity = 0
+    rocket_mass = 2641
     max_thrust = 20000
     dt = 0.05
 
