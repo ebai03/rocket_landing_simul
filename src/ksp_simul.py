@@ -158,9 +158,9 @@ if __name__ == "__main__":
             vessel.flight(referenceFrame).vertical_speed,
             vessel.mass,
             vessel.max_vacuum_thrust,
-            1.9,  # Velocity change, constant during maneuver
-            1.0,  # Height change, constant during maneuver
-            3.0, # Height at which the maneuver stops
+            0.8449,  # Velocity change, constant during maneuver
+            1.8872,  # Height change, constant during maneuver
+            1.5, # Height at which the maneuver stops
             vessel.orbit.body, # CelestialBody object containing info about landing target
             dt = 1 # wait time
         )
