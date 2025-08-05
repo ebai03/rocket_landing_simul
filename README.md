@@ -91,14 +91,6 @@ After verifying all the previous requirements are met, start KSP and get into a 
 python ksp_simul.py
 ```
 
-Screenshot of the program in the middle of a maneuver:
+An automatic landing will be attempted with the current active ship. **Click the image or [here](https://youtu.be/8dky9rphE80)** to see a video demo of the automatic landing.**
 
-![ksp](screenshots/{FC0DB047-C44E-4DE1-9122-28348AAAB935}.png)
-
-An automatic landing will be attempted with the current active ship. **Click the GIF or [here](https://youtu.be/8dky9rphE80)** to see the video demo of the automatic landing.**
-
-[![Video demo](https://i.ytimg.com/an_webp/8dky9rphE80/mqdefault_6s.webp?du=3000&sqp=CIb1-8MG&rs=AOn4CLCGCH6spzB1XgRQXqAIXx3Qy2xtpQ)](https://youtu.be/8dky9rphE80)
-
-[](https://youtu.be/8dky9rphE80)
-
-Again, this will only work when there is almost no horizontal velocity and over a celestial body with no atmosphere.
+[![Video demo](screenshots/{FC0DB047-C44E-4DE1-9122-28348AAAB935}.png)](https://youtu.be/8dky9rphE80)
